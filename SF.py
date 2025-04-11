@@ -5,7 +5,7 @@ import os
 
 load_dotenv()
 
-# Salesforce credentials
+# Salesforce credentials 
 username = os.getenv('SP_USERNAME')
 password = os.getenv('SP_PASSWORD')
 security_token = os.getenv('SP_SECURITY_TOKEN')
@@ -109,7 +109,7 @@ files=[
 ]
 
 headers = {
-  'Cookie': 'ticket=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRldmFyYWpAaWJhY3VzdGVjaGxhYnMuaW4iLCJpZCI6NCwidHlwZSI6IkFETUlOIiwiaWF0IjoxNzQxMzM5MDc5LCJleHAiOjE3NDEzODIyNzl9.7-6a280xHmG6MDJs_G2-jWgqVcWLLNRg-k9aiKhSqsw'
+  'Cookie': 'ticket=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRldmFyYWpAaWJhY3VzdGVjaGxhYnMuaW4iLCJpZCI6NCwidHlwZSI6IkFETUlOIiwiaWF0IjoxNzQ0MzQ2NjMzLCJleHAiOjE3NDQzODk4MzN9.mijCPz6sYHz41mU_Mj0DX4EzfajHbg4iaZ9-bEdGzfA'
 }
 
 response = requests.request("POST", url, headers=headers, data=payload, files=files)
